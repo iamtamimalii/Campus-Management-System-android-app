@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FacultyActivity">
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginBottom="17dp"
+        android:text="⌂"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="172dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:text="Faculty"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/fac_FName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/home"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/fac_FName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="21dp"
+        android:layout_marginBottom="15dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/fac_LName"
+        app:layout_constraintStart_toEndOf="@+id/home"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/fac_LName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/fac_Gender"
+        app:layout_constraintStart_toStartOf="@+id/fac_FName"
+        app:layout_constraintTop_toBottomOf="@+id/fac_FName" />
+
+    <EditText
+        android:id="@+id/fac_Gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Gender"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/fac_Reg"
+        app:layout_constraintStart_toStartOf="@+id/fac_LName"
+        app:layout_constraintTop_toBottomOf="@+id/fac_LName" />
+
+    <EditText
+        android:id="@+id/fac_Reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="17dp"
+        android:ems="10"
+        android:hint="Reg. Number"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/fac_Uni"
+        app:layout_constraintEnd_toEndOf="@+id/fac_Gender"
+        app:layout_constraintTop_toBottomOf="@+id/fac_Gender" />
+
+    <EditText
+        android:id="@+id/fac_Uni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:hint="University Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/fac_fac"
+        app:layout_constraintStart_toStartOf="@+id/fac_Reg"
+        app:layout_constraintTop_toBottomOf="@+id/fac_Reg" />
+
+    <EditText
+        android:id="@+id/fac_fac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:ems="10"
+        android:hint="Faculty"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/fac_Submit"
+        app:layout_constraintStart_toStartOf="@+id/fac_Uni"
+        app:layout_constraintTop_toBottomOf="@+id/fac_Uni" />
+
+    <Button
+        android:id="@+id/fac_Submit"
+        android:layout_width="114dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="27dp"
+        android:text="SUBMIT"
+        app:layout_constraintBottom_toTopOf="@+id/fac_View"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fac_fac" />
+
+    <Button
+        android:id="@+id/fac_View"
+        android:layout_width="209dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="76dp"
+        android:text="VIEW ALL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fac_Submit" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

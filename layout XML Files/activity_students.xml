@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".StudentsActivity">
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="64dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="17dp"
+        android:text="⌂"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="91dp"
+        android:layout_marginBottom="38dp"
+        android:gravity="center"
+        android:text="Students"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/std_FName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/std_FName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="19dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/std_LName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/std_LName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/std_Gender"
+        app:layout_constraintStart_toStartOf="@+id/std_FName"
+        app:layout_constraintTop_toBottomOf="@+id/std_FName" />
+
+    <EditText
+        android:id="@+id/std_Gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:hint="Gender"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/std_Reg"
+        app:layout_constraintStart_toStartOf="@+id/std_LName"
+        app:layout_constraintTop_toBottomOf="@+id/std_LName" />
+
+    <EditText
+        android:id="@+id/std_Reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:hint="Reg. Number"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/std_Uni"
+        app:layout_constraintStart_toStartOf="@+id/std_Gender"
+        app:layout_constraintTop_toBottomOf="@+id/std_Gender" />
+
+    <EditText
+        android:id="@+id/std_Uni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:ems="10"
+        android:hint="University Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/std_Submit"
+        app:layout_constraintStart_toStartOf="@+id/std_Reg"
+        app:layout_constraintTop_toBottomOf="@+id/std_Reg" />
+
+    <Button
+        android:id="@+id/std_Submit"
+        android:layout_width="114dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="50dp"
+        android:text="SUBMIT"
+        app:layout_constraintBottom_toTopOf="@+id/std_View"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/std_Uni" />
+
+    <Button
+        android:id="@+id/std_View"
+        android:layout_width="209dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="76dp"
+        android:text="VIEW ALL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/std_Submit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

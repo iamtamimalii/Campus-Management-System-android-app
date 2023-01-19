@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StaffActivity">
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="64dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="17dp"
+        android:text="⌂"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="91dp"
+        android:layout_marginBottom="38dp"
+        android:gravity="center"
+        android:text="Staff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/staff_FName"
+        app:layout_constraintStart_toStartOf="@+id/staff_FName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/staff_FName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="43dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/staff_LName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/staff_LName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/staff_Gender"
+        app:layout_constraintEnd_toEndOf="@+id/staff_FName"
+        app:layout_constraintTop_toBottomOf="@+id/staff_FName" />
+
+    <EditText
+        android:id="@+id/staff_Gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="41dp"
+        android:ems="10"
+        android:hint="Gender"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/staff_Uni"
+        app:layout_constraintStart_toStartOf="@+id/staff_LName"
+        app:layout_constraintTop_toBottomOf="@+id/staff_LName" />
+
+    <EditText
+        android:id="@+id/staff_Uni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="26dp"
+        android:ems="10"
+        android:hint="University Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/staff_Submit"
+        app:layout_constraintStart_toStartOf="@+id/staff_Gender"
+        app:layout_constraintTop_toBottomOf="@+id/staff_Gender" />
+
+    <Button
+        android:id="@+id/staff_Submit"
+        android:layout_width="114dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="53dp"
+        android:text="SUBMIT"
+        app:layout_constraintBottom_toTopOf="@+id/staff_View"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/staff_Uni" />
+
+    <Button
+        android:id="@+id/staff_View"
+        android:layout_width="209dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="76dp"
+        android:text="VIEW ALL"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/staff_Submit" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

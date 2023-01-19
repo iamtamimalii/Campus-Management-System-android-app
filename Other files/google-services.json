@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "445883251526",
+    "project_id": "campus-management-system-af60a",
+    "storage_bucket": "campus-management-system-af60a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:445883251526:android:7114961f0a59ae9bf50347",
+        "android_client_info": {
+          "package_name": "com.example.campusmanagementsyatem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "445883251526-9jvirtl2e6nmpm8g2e9vmttupi3ua2op.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeabEaqcqNzYuIY7K_0I5QhIkg7hJnYTQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "445883251526-9jvirtl2e6nmpm8g2e9vmttupi3ua2op.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
